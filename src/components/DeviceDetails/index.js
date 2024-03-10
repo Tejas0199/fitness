@@ -1,6 +1,6 @@
 import Button from "../Button";
 
-import WatchImage from '../../assets/images/fire-boltt.svg';
+import WatchImage from '../../assets/images/fire-boltt.png';
 
 const DeviceInfo = () => {
 	return <div className=" device-container p-3 mt-20 mx-1 bg-dark-gray relative">
