@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin : 0;
+  padding: 0;
+}
+
+.device-container {
+  height: 286px;
+  border-radius: 40px;
+  box-shadow: 0px 30px 70px black;
+}
+
+.device-container .device-image {
+  top: -20px;
+  height: 336px;
+}
+
+
+.device-container::before, .device-container::after {
+  content: '';
+  background-color: #FFBFA6;
+  border-radius: inherit;
+  position: absolute;
+  top: -20px;
+  height: inherit;
+  width: 94%;
+  z-index: -1;
+}
+
+.device-container::after {
+  background-color: #FFE3D8;
+  width: 88%;
+  top: -40px;
+  left: 30px;
+  z-index: -2;
+}
+
+.form-container {
+  border-radius: 40px 40px 0 0;
+}
+
+.select-box .options {
+  left: 0;
+  top: 55px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.select-box .options>p:hover {
+  background-color: #F2F2F2;
+}
+
+.circle {
+  border-radius: 40px;
+}
+.circle>div {
+  width: 176px;
+  height: 176px;
+}
+
+
+.progress-bar-bg {
+  stroke-dasharray: 364.5;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.progress-bar-per {
+  stroke-dasharray: 364.5;
+  stroke-dashoffset: 220;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  stroke-linecap: round;
+}
+
+.text-sub {
+  position: relative;
+}
